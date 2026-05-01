@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 class JogadorVirtual{
-    executar jogada() {
+
     System.out.println("Jogador 2 (" + this.jogador2.getSimbolo() + ")");
             do {
                 linha = random.nextInt(0, 3);
@@ -12,7 +12,7 @@ class JogadorVirtual{
         }
 
 }
-}
+
 class JogadorHumano extends Jogador{
        System.out.println("Jogador 1 (" + this.jogador1.getSimbolo() + ")");
             do {
