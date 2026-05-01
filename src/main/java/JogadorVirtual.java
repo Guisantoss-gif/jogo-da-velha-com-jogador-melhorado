@@ -12,7 +12,7 @@ return this.linha;
             }
             
             
-            public executar(){System.out.println("Jogador 2 (" + this.jogador2.getSimbolo() + ")");
+            public void executar (){System.out.println("Jogador 2 (" + this.jogador2.getSimbolo() + ")");
             do {
                this.linha = random.nextInt(0, 3);
                 this.coluna = random.nextInt(0, 3);
