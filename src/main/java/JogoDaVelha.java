@@ -1,11 +1,37 @@
 import java.util.Random;
 import java.util.Scanner;
+class JogadorVirtual{
+    executar jogada() {
+    System.out.println("Jogador 2 (" + this.jogador2.getSimbolo() + ")");
+            do {
+                linha = random.nextInt(0, 3);
+                coluna = random.nextInt(0, 3);
+            } while (!this.tabuleiro.jogar(this.jogador2.getSimbolo(), linha, coluna));
 
+            partida++;
+        }
+
+}
+}
+class JogadorHumano extends Jogador{
+       System.out.println("Jogador 1 (" + this.jogador1.getSimbolo() + ")");
+            do {
+                System.out.print("Linha (0-2): ");
+                linha = sc.nextInt();
+                System.out.print("Coluna (0-2): ");
+                coluna = sc.nextInt();
+            } while (!this.tabuleiro.jogar(this.jogador1.getSimbolo(), linha, coluna));
+
+              if (this.tabuleiro.acabouOJogo()) {
+                break;
+            }
+}
 class JogoDaVelha {
 
     private Jogador jogador1;
     private Jogador jogador2;
     private Tabuleiro tabuleiro;
+    
 
     private JogoDaVelha(Jogador jogador1, Jogador jogador2, Tabuleiro tabuleiro) {
         this.jogador1 = jogador1;
